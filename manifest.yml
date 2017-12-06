@@ -1,0 +1,12 @@
+---
+applications:
+  - name: auditapp
+    memory: 1G
+    instances: 1
+    random-route: true
+    buildpack: java_buildpack_offline
+    path: ./target/auditApp-1.1.jar
+
+services:
+  - cloudsql
+
